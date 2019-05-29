@@ -1,0 +1,43 @@
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title"> Coach List
+            <!-- <button routerLink="/driverlist/adddriver" class="btn btn-success pull-right" title="Add Driver"><i
+                class="fa fa-plus"></i><span> Add Driver</span></button> -->
+          </h4>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table datatable [dtOptions]="dtOptions" class="row-border hover ddd">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Coach Name</th>
+                  <th>Date</th>
+                  <th>NO. of students involve</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody *ngIf="persons?.length != 0">
+                  <tr *ngFor="let person of persons;let i = index">
+                      <td>#{{ i + 1 }}</td>
+                      <td>{{ person.first_name }} {{ person.last_name }}</td>
+                      <td>{{ person.created_at | date:"dd/MM/yyyy" }}</td>
+                      <td>{{ person.total_students }}</td>
+                      <td>-</td>
+                  </tr>
+              </tbody>
+              <tbody *ngIf="persons?.length == 0">
+                <tr>
+                  <td colspan="3" class="no-data-available">No data!</td>
+                </tr>
+              <tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

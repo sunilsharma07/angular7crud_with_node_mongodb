@@ -1,0 +1,100 @@
+
+<div class="modal-header">
+    <h4 class="modal-title pull-left">Add Coach </h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()"><span aria-hidden="true">&times;</span></button>
+    </div>
+    
+    
+    <div class="modal-body">
+      <!--<form class="form-horizontal"  [formGroup]="subSendForm" (ngSubmit)="onSubmit()" novalidate enctype="multipart/form-data">-->
+    
+        <form [formGroup]="subSendForm" class="form-horizontal" role="form" name="subSendForm" novalidate="" (ngSubmit)="onSubmit()" enctype="multipart/form-data">
+    
+            <div class="form-group row">
+                <label class="col-md-2 col-form-label">First Name:</label>
+                <div class="col-md-10">
+                    <input name="co_f_name" id = "co_f_name" type="text" class="form-control" formControlName="co_f_name" placeholder="Enter First Name">                
+                    <span class="text-danger" *ngIf="subSendForm.controls['co_f_name'].hasError('required') && isSubmitted">First Name is Required
+                    </span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-md-2 col-form-label">Last Name:</label>
+                <div class="col-md-10">
+                    <input name="co_l_name" id = "co_l_name" type="text" class="form-control" formControlName="co_l_name" placeholder="Enter Last Name">                
+                    <span class="text-danger" *ngIf="subSendForm.controls['co_l_name'].hasError('required') && isSubmitted">Last Name is Required
+                    </span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-md-2 col-form-label">Email:</label>
+                <div class="col-md-10">
+                    <input name="co_email" id = "co_email" type="text" class="form-control" formControlName="co_email" placeholder="Enter Email">                
+                    <span class="text-danger" *ngIf="subSendForm.controls['co_email'].hasError('required') && isSubmitted">Email is Required
+                    </span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-md-2 col-form-label">Phone:</label>
+                <div class="col-md-10">
+                    <input name="co_phone" id = "co_phone" type="text" class="form-control" formControlName="co_phone" placeholder="Enter Phone">                
+                    <span class="text-danger" *ngIf="subSendForm.controls['co_phone'].hasError('required') && isSubmitted">Phone is Required
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label class="col-md-2 col-form-label">Password:</label>
+                <div class="col-md-10">
+                    <input name="co_password" id = "co_password" type="text" class="form-control" formControlName="co_password" placeholder="Enter password">                
+                    <span class="text-danger" *ngIf="subSendForm.controls['co_password'].hasError('required') && isSubmitted">Password is Required
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="form-group row">                
+                <label class="col-md-2 col-form-label">Profile Pic</label> 
+                <div class="col-md-10">
+                        <input type="file" title="PGN File" accept="pgn,PGN" (change)="onSelectFile($event)">                        
+                        <div class="help-block"></div>
+                       <span class="text-danger" *ngIf="chk_upload_valid==0">Please upload Only PGN File</span>
+                </div>                
+             </div>
+    
+    
+            <div class="form-group row">
+              <label class="col-md-2 col-form-label">Status</label>
+              <div class="col-md-2">
+    
+                  <div class="radio">
+                      <label><input type="radio" id="cate_status" formControlName="cate_status" name="cate_status" [value]="1" >Active</label>
+                    </div>
+                    <div class="radio">
+                      <label><input type="radio" id="cate_status" formControlName="cate_status" name="cate_status" [value]="0">Inactive</label>
+                    </div>
+              </div>
+          </div>
+    
+          
+    
+         
+            <div class="form-group row">
+              <div class="col-md-2"></div>
+              <div class="col-md-4">
+                  <button class="btn btn-sm btn-primary mr-1" type="Submit" [disabled]="btnDisabled">Add</button>
+                  <button class="btn" type="button" (click) = "onCancel()">Cancel</button>
+              </div>
+          </div>
+           
+      </form>
+    </div>
+    
+    <div class="modal-footer">
+    </div>
+    
+    

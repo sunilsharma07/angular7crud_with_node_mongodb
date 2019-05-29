@@ -1,0 +1,14 @@
+{
+    // comments are supported
+    "uid": "x-code",
+    "script": "./bin/www",
+    "watch": true,
+    "watchDirectory": "/opt/Nodeserver/x-code/restart.js",
+    "sourceDir": "/opt/Nodeserver/x-code",
+    "workingDir": "/opt/Nodeserver/x-code",
+    "append": true,
+    "plain": true,
+    "logFile": "/opt/Nodeserver/x-code/logs/log.log",
+    "errFile": "/opt/Nodeserver/x-code/logs/err.log",
+    "outFile": "/opt/Nodeserver/x-code/logs/out.log"
+}

@@ -1,0 +1,172 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <!-- <div class="amenity-header">
+            <i class="fa fa-align-justify"></i> amenity List
+          </div> -->
+        <div class="card-header">
+          <div class="mb-4">
+            <i class="fa fa-align-justify"></i>
+            <b class="ml-1 font-15"> Coach List</b>
+            <button (click)="openadd_or_editModal('add')" class="btn btn-success pull-right" title="Add Coach"><i
+              class="fa fa-plus"></i><span> Add Coach</span></button>
+            
+          </div>
+          <form class="form-horizontal filter-form" name="filterForm" (submit)="filterData()">
+            <div class="form-group row">
+              <div class="form-wrapper col-md-4 col-sm-12">
+                <label class="col-form-label">Coach First Name</label>
+                <div class="form-input">
+                  <input type="text" class="form-control" name="name" [(ngModel)]="params.first_name" autocomplete="off"
+                    maxlength="15">
+                </div>
+              </div>
+              
+              <div class="form-wrapper col-md-4 col-sm-12">
+                <label class="col-form-label">Coach last Name</label>
+                <div class="form-input">
+                  <input type="text" class="form-control" name="name" [(ngModel)]="params.last_name" autocomplete="off"
+                    maxlength="15">
+                </div>
+              </div>
+                
+              <div class="form-wrapper col-md-4 col-sm-12">
+                <label class="col-form-label">Date Range</label>
+                    <div class="form-input input-date">
+                      <input class="form-control" [bsConfig]="{ containerClass: 'theme-blue',  rangeInputFormat: 'DD-MM-YYYY' }"
+                        #drp="bsDaterangepicker" name="date" bsDaterangepicker [(ngModel)]="params.date" readonly>
+                          <span class="input-group-btn">
+                            <button class="btn btn-md btn-default" type="button" (click)="drp.toggle()" [attr.aria-expanded]="drp.isOpen">
+                              <i class="icon-calendar"></i>
+                            </button>
+                          </span>
+                    </div>
+              </div>
+
+            </div>
+
+            
+            <div class="row form-group">
+              <div class="user-buttons float-right text-right col-md-12">
+                <button class="btn btn-primary mt-0 mr-2" type="submit" name="filter">Filter</button>
+                <button class="btn btn-danger mt-0" [disabled]="objectKeys(params).length < 1 && !isFilter" (click)="resetFilter()"
+                  name="clear">Clear</button>
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+        <div class="card-body">
+              <div class="entry-select mb-4">
+                <span>Show</span>
+                <select [(ngModel)]="limit" (change)="sorting()">
+                  <option [ngValue]="10">10</option>
+                  <option [ngValue]="25">25</option>
+                  <option [ngValue]="50">50</option>
+                  <option [ngValue]="100">100</option>
+                </select>
+                <span>entries</span>
+              </div>
+              <div class="table-responsive">
+                <table class="table table-striped user">
+                  <thead>
+                    <tr>
+                      <th class="cre-name">
+                        <div (click)="headerSort('first_name',order_type)">
+                          <span class="col-header">First Name</span>
+                          <span *ngIf="sort_field != 'name'" class="both-arrow"></span>
+                          <span *ngIf="order_type == 'desc' && sort_field=='first_name'" class="up-arrow"></span>
+                          <span *ngIf="order_type == 'asc' &&sort_field=='first_name'" class="down-arrow"></span>
+                        </div>
+                      </th>
+
+                      <th class="cre-name">
+                        <div (click)="headerSort('last_name',order_type)">
+                          <span class="col-header">Last Name</span>
+                          <span *ngIf="sort_field != 'name'" class="both-arrow"></span>
+                          <span *ngIf="order_type == 'desc' && sort_field=='last_name'" class="up-arrow"></span>
+                          <span *ngIf="order_type == 'asc' &&sort_field=='last_name'" class="down-arrow"></span>
+                        </div>
+                      </th>
+
+                      <th class="cre-name">
+                        <div (click)="headerSort('email',order_type)">
+                            <span class="col-header">Email</span>
+                            <span *ngIf="sort_field != 'name'" class="both-arrow"></span>
+                            <span *ngIf="order_type == 'desc' && sort_field=='email'" class="up-arrow"></span>
+                            <span *ngIf="order_type == 'asc' &&sort_field=='email'" class="down-arrow"></span>
+                        </div>
+                      </th>
+
+                      <th class="cre-name">
+                        <div (click)="headerSort('total_students',order_type)">
+                            <span class="col-header">No Of Student</span>
+                            <span *ngIf="sort_field != 'name'" class="both-arrow"></span>
+                            <span *ngIf="order_type == 'desc' && sort_field=='total_students'" class="up-arrow"></span>
+                            <span *ngIf="order_type == 'asc' &&sort_field=='total_students'" class="down-arrow"></span>
+                        </div>
+                      </th>
+
+
+                      <th>
+                        <div (click)="headerSort('created_at',order_type)">
+                          <span class="col-header">Created Date</span>
+                          <span *ngIf="sort_field != 'created_at'" class="both-arrow"></span>
+                          <span *ngIf="order_type == 'desc' && sort_field=='created_at'" class="up-arrow"></span>
+                          <span *ngIf="order_type == 'asc' &&sort_field=='created_at'" class="down-arrow"></span>
+                        </div>
+                      </th>
+                      <th>Status</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody *ngIf="categoriesList.length">
+                    <tr *ngFor="let category of categoriesList;let i=index">
+                      <td class="cre-name">{{category.first_name}}</td>
+                      <td class="cre-name">{{category.last_name}}</td>
+                      <td class="cre-name">{{category.email}}</td>
+                      <td class="cre-name">{{category.total_students}}</td>
+                      <td class="cre-name">{{category.created_at | date :'dd-MM-yyyy'}}</td>
+                      <td>
+                        <label class="switch switch-default switch-3d switch-primary">
+                          <input type="checkbox" class="switch-input" [(ngModel)]="category.displayStatus" (ngModelChange)="updateStatus(category.status, category._id, i, category.displayStatus)">
+                          <span class="switch-slider"></span>
+                        </label>
+                      </td>
+                      <td>
+                          <button style="margin-right:5px;" [queryParams]="{id:category._id}" class="btn btn-sm btn-primary" title="View Student List"
+                          routerLink="/coaches/studentList">
+                          <i class="fa fa-eye"></i>
+                        </button>
+                        <button class="btn btn-sm btn-success mr-1" tooltip="Edit" placement="bottom" (click)="openadd_or_editModal('edit',category._id,i)"><i
+                            class="icon-pencil"></i> Edit</button>
+                        <button class="btn btn-sm btn-danger mr-1" tooltip="Delete" placement="bottom" (click)="delete_cate(category._id)"><i
+                            class="icon-trash"></i> Delete</button>                          
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tbody *ngIf="!categoriesList.length">
+                      <tr>
+                          <td colspan="7" class="text-center">No records found</td>
+                      </tr>
+                  </tbody>
+                </table>
+              </div>
+            <div class="show-entries mb-3 float-left">
+              <span>Showing {{categoriesList.length == 0 ? 0 :currentPage*limit- limit+1}} to
+                {{limit*currentPage > totalItem ? totalItem : limit*currentPage }} of {{totalItem}} entries</span>
+            </div>
+            <div class="table-pagination float-right">
+               
+              <pagination [boundaryLinks]="true" [itemsPerPage]="limit" [totalItems]="totalItem" (pageChanged)="pageChanged($event)"
+                [(ngModel)]="currentPage" [maxSize]="5" previousText="&lsaquo;" nextText="&rsaquo;" firstText="&laquo;"
+                lastText="&raquo;" (numPages)="smallnumPages = $event"></pagination>
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

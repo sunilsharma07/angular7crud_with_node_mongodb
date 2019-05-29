@@ -1,0 +1,124 @@
+{ 
+    "_id" : ObjectId("5cb995561b7fc63ce61970f1"), 
+    "email" : "venil@yopmail.com", 
+    "password" : "aebb3a22b8f333c669bdd9027ae5d807", 
+    "created_at" : ISODate("2019-04-19T09:31:02.711+0000"), 
+    "updated_at" : ISODate("2019-04-19T09:31:02.711+0000"), 
+    "forgotpassword_code" : "", 
+    "user_type" : "coach", 
+    "access_token" : "", 
+    "image" : "1555666262631.jpg", 
+    "phone" : "", 
+    "last_name" : "Dose", 
+    "first_name" : "Venil", 
+    "__v" : NumberInt(0), 
+    "status" : NumberInt(1)
+}
+{ 
+    "_id" : ObjectId("5cb86db0b3c557483dda3f47"), 
+    "email" : "admin@agileinfoways.com", 
+    "password" : "73dcb3f80a2590e182072c5252e39db9", 
+    "created_at" : ISODate("2019-04-18T12:29:36.150+0000"), 
+    "updated_at" : ISODate("2019-04-18T12:29:36.150+0000"), 
+    "last_name" : "infoways", 
+    "first_name" : "agile", 
+    "user_type" : "admin", 
+    "__v" : NumberInt(0), 
+    "access_token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Y2I4NmRiMGIzYzU1NzQ4M2RkYTNmNDciLCJlbWFpbCI6ImFkbWluQGFnaWxlaW5mb3dheXMuY29tIiwidGltZXN0YW1wIjoiMjAxOS0wNS0yOFQwOToxMDo1OS45MjVaIiwiaWF0IjoxNTU5MDM0NjU5LCJleHAiOjE1NTkxMjEwNTl9.0qfrsRHzL4hHQVf3zZ3oGVn4C8PUb8KCaGC42Q52kLY"
+}
+{ 
+    "_id" : ObjectId("5cc041fea2a5055cb3003051"), 
+    "email" : "ricky@yopmail.com", 
+    "password" : "0f0e3b58fd6d356db8f8d9756f31465b", 
+    "created_at" : ISODate("2019-04-24T11:01:18.581+0000"), 
+    "updated_at" : ISODate("2019-04-24T11:01:18.581+0000"), 
+    "forgotpassword_code" : "", 
+    "user_type" : "coach", 
+    "access_token" : "", 
+    "image" : "", 
+    "phone" : "", 
+    "last_name" : "bort", 
+    "first_name" : "Ricky", 
+    "__v" : NumberInt(0), 
+    "status" : NumberInt(1)
+}
+{ 
+    "_id" : ObjectId("5ce635b1da554318b1db8b08"), 
+    "email" : "test3@malinator.com", 
+    "password" : "16085e39f5d50ca556cfa4106c3f2997", 
+    "created_at" : ISODate("2019-05-23T05:54:57.611+0000"), 
+    "updated_at" : ISODate("2019-05-23T05:54:57.611+0000"), 
+    "forgotpassword_code" : "", 
+    "user_type" : "coach", 
+    "access_token" : "", 
+    "image" : "1558610823662_spsjG7xnAOkAAwn7Cqz7WUHgA.jpg", 
+    "phone" : "123456", 
+    "last_name" : "1test31", 
+    "first_name" : "test311", 
+    "__v" : NumberInt(0), 
+    "status" : NumberInt(1)
+}
+{ 
+    "_id" : ObjectId("5ce644667458dc1bffe0c6e2"), 
+    "email" : "test4@gmail.com", 
+    "password" : "71a4d5a4a593daf8417b3779de514785", 
+    "created_at" : ISODate("2019-05-23T06:57:42.192+0000"), 
+    "updated_at" : ISODate("2019-05-23T06:57:42.192+0000"), 
+    "forgotpassword_code" : "1", 
+    "user_type" : "coach", 
+    "access_token" : "", 
+    "image" : "", 
+    "phone" : "5241266599", 
+    "last_name" : "test41", 
+    "first_name" : "test41", 
+    "__v" : NumberInt(0), 
+    "status" : NumberInt(1)
+}
+{ 
+    "_id" : ObjectId("5ce644a0a50b0d1d2dd69a38"), 
+    "email" : "test5@gmail.com", 
+    "password" : "38c2c12ffe83c2b431fd5aac7ee63cf8", 
+    "created_at" : ISODate("2019-05-23T06:58:40.604+0000"), 
+    "updated_at" : ISODate("2019-05-23T06:58:40.604+0000"), 
+    "status" : NumberInt(1), 
+    "forgotpassword_code" : "", 
+    "user_type" : "coach", 
+    "access_token" : "", 
+    "image" : "", 
+    "phone" : "test5", 
+    "last_name" : "test5", 
+    "first_name" : "test5", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5ce661b498c512245a8bbec5"), 
+    "email" : "test6@gmail.com", 
+    "password" : "e070bed04c02f1a47f1317d40060a196", 
+    "created_at" : ISODate("2019-05-23T09:02:44.116+0000"), 
+    "updated_at" : ISODate("2019-05-23T09:02:44.116+0000"), 
+    "status" : NumberInt(1), 
+    "forgotpassword_code" : "", 
+    "user_type" : "coach", 
+    "access_token" : "", 
+    "image" : "", 
+    "phone" : "test6", 
+    "last_name" : "test6", 
+    "first_name" : "test6", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5cecfaf54e0c6a1628aa2532"), 
+    "email" : "manish.sharma@agileinfoways.com", 
+    "password" : "fbcd188705959627896f162f454505fa", 
+    "created_at" : ISODate("2019-05-28T09:10:13.959+0000"), 
+    "updated_at" : ISODate("2019-05-28T09:10:13.959+0000"), 
+    "status" : NumberInt(1), 
+    "forgotpassword_code" : "", 
+    "user_type" : "coach", 
+    "access_token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Y2VjZmFmNTRlMGM2YTE2MjhhYTI1MzIiLCJlbWFpbCI6Im1hbmlzaC5zaGFybWFAYWdpbGVpbmZvd2F5cy5jb20iLCJ0aW1lc3RhbXAiOiIyMDE5LTA1LTI4VDA5OjEwOjQxLjg3OFoiLCJpYXQiOjE1NTkwMzQ2NDEsImV4cCI6MTU1OTEyMTA0MX0.CXRgUSktHKb1Gmb8i1siTOmSxBZhWgBmCCif_itV1Ls", 
+    "image" : "", 
+    "phone" : "5214562145", 
+    "last_name" : "sharma", 
+    "first_name" : "manish", 
+    "__v" : NumberInt(0)
+}

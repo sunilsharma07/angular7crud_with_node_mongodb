@@ -1,0 +1,40 @@
+{ 
+    "_id" : ObjectId("5cdeadfda8f98255f8106859"), 
+    "created_at" : ISODate("2019-05-17T12:50:05.163+0000"), 
+    "updated_at" : ISODate("2019-05-17T12:50:05.163+0000"), 
+    "status" : NumberInt(1), 
+    "name" : "category1", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5cdeae03a8f98255f810685a"), 
+    "created_at" : ISODate("2019-05-17T12:50:11.666+0000"), 
+    "updated_at" : ISODate("2019-05-17T12:50:11.666+0000"), 
+    "status" : NumberInt(1), 
+    "name" : "category2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5cdeae0aa8f98255f810685b"), 
+    "created_at" : ISODate("2019-05-17T12:50:18.478+0000"), 
+    "updated_at" : ISODate("2019-05-17T12:50:18.478+0000"), 
+    "status" : NumberInt(1), 
+    "name" : "category31", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5cebdd67bb73ba2d1325e2ae"), 
+    "created_at" : ISODate("2019-05-27T12:51:51.842+0000"), 
+    "updated_at" : ISODate("2019-05-27T12:51:51.842+0000"), 
+    "status" : NumberInt(1), 
+    "name" : "category4", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5cebe67c141ad132a1c2901a"), 
+    "created_at" : ISODate("2019-05-27T13:30:36.561+0000"), 
+    "updated_at" : ISODate("2019-05-27T13:30:36.561+0000"), 
+    "status" : NumberInt(1), 
+    "name" : "category 5", 
+    "__v" : NumberInt(0)
+}

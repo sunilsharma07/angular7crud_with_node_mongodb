@@ -1,0 +1,312 @@
+{ 
+    "_id" : ObjectId("5c370d039144424c7c5aaee8"), 
+    "key" : "dashboard", 
+    "value" : "Dashboard", 
+    "routes" : {
+        "view" : [
+
+        ], 
+        "api" : [
+
+        ]
+    }, 
+    "status" : NumberInt(1), 
+    "createdAt" : ISODate("2019-01-10T09:14:31.215+0000"), 
+    "updatedAt" : ISODate("2019-01-10T09:14:31.215+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5c370d039144424c7c5aaee9"), 
+    "key" : "users", 
+    "value" : "Users Management", 
+    "routes" : {
+        "view" : [
+
+        ], 
+        "api" : [
+            "/api/getOwners", 
+            "/api/getOwner", 
+            "/api/actionOwner", 
+            "/api/getDevelopers", 
+            "/api/getDeveloper", 
+            "/api/actionDeveloper", 
+            "/api/get_record_user_category"
+        ]
+    }, 
+    "status" : NumberInt(1), 
+    "createdAt" : ISODate("2019-01-10T09:14:31.215+0000"), 
+    "updatedAt" : ISODate("2019-01-10T09:14:31.215+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5c370d039144424c7c5aaeea"), 
+    "key" : "property", 
+    "value" : "Property Management", 
+    "routes" : {
+        "view" : [
+
+        ], 
+        "api" : [
+
+        ]
+    }, 
+    "status" : NumberInt(2), 
+    "createdAt" : ISODate("2019-01-10T09:14:31.215+0000"), 
+    "updatedAt" : ISODate("2019-01-10T09:14:31.215+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5c370d039144424c7c5aaeeb"), 
+    "key" : "credit", 
+    "value" : "Credit Management", 
+    "routes" : {
+        "view" : [
+
+        ], 
+        "api" : [
+            "/api/addCredit", 
+            "/api/getCredits", 
+            "/api/updateCreditStatus", 
+            "/api/deleteCredit"
+        ]
+    }, 
+    "status" : NumberInt(1), 
+    "createdAt" : ISODate("2019-01-10T09:14:31.215+0000"), 
+    "updatedAt" : ISODate("2019-01-10T09:14:31.215+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5c370d039144424c7c5aaeec"), 
+    "key" : "data", 
+    "value" : "Data Management", 
+    "routes" : {
+        "view" : [
+
+        ], 
+        "api" : [
+            "/api/getCategory", 
+            "/api/createCategory", 
+            "/api/updateCategory", 
+            "/api/deleteCategory", 
+            "/api/updateCategoryStatus", 
+            "/api/getCategories", 
+            "/api/getSubCategories", 
+            "/api/createSubCategory", 
+            "/api/updateSubCategory", 
+            "/api/deleteSubCategory", 
+            "/api/updateSubCategoryStatus", 
+            "/api/addAmenity", 
+            "/api/getAmenities", 
+            "/api/updateAmenityStatus", 
+            "/api/deleteAmenity", 
+            "/api/updateAmenity", 
+            "/api/getCountry", 
+            "/api/getCountries", 
+            "/api/addCountry", 
+            "/api/updateCountry", 
+            "/api/updateCountryStatus", 
+            "/api/getState", 
+            "/api/getStates", 
+            "/api/addState", 
+            "/api/updateState", 
+            "/api/updateStateStatus", 
+            "/api/getCity", 
+            "/api/getCities", 
+            "/api/addCity", 
+            "/api/updateCity", 
+            "/api/updateCityStatus", 
+            "/api/getLocation", 
+            "/api/getLocations", 
+            "/api/addLocation", 
+            "/api/updateLocation", 
+            "/api/updateLocationStatus", 
+            "/api/getTower", 
+            "/api/getTowers", 
+            "/api/addTower", 
+            "/api/updateTower", 
+            "/api/updateTowerStatus"
+        ]
+    }, 
+    "status" : NumberInt(1), 
+    "createdAt" : ISODate("2019-01-10T09:14:31.215+0000"), 
+    "updatedAt" : ISODate("2019-01-10T09:14:31.215+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5c370d039144424c7c5aaeed"), 
+    "key" : "invoice", 
+    "value" : "Invoice Management", 
+    "routes" : {
+        "view" : [
+
+        ], 
+        "api" : [
+
+        ]
+    }, 
+    "status" : NumberInt(2), 
+    "createdAt" : ISODate("2019-01-10T09:14:31.215+0000"), 
+    "updatedAt" : ISODate("2019-01-10T09:14:31.215+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5c370d039144424c7c5aaeee"), 
+    "key" : "report", 
+    "value" : "Report Management", 
+    "routes" : {
+        "view" : [
+
+        ], 
+        "api" : [
+
+        ]
+    }, 
+    "status" : NumberInt(2), 
+    "createdAt" : ISODate("2019-01-10T09:14:31.215+0000"), 
+    "updatedAt" : ISODate("2019-01-10T09:14:31.215+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5c370d039144424c7c5aaeef"), 
+    "key" : "ads", 
+    "value" : "Ads Management", 
+    "routes" : {
+        "view" : [
+
+        ], 
+        "api" : [
+            "/api/getAds", 
+            "/api/addAds", 
+            "/api/updateAds", 
+            "/api/updateAdsStatus", 
+            "/api/deleteAds"
+        ]
+    }, 
+    "status" : NumberInt(1), 
+    "createdAt" : ISODate("2019-01-10T09:14:31.215+0000"), 
+    "updatedAt" : ISODate("2019-01-10T09:14:31.215+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5c370d039144424c7c5aaef0"), 
+    "key" : "cms", 
+    "value" : "CMS Management", 
+    "routes" : {
+        "view" : [
+
+        ], 
+        "api" : [
+            "/api/getEmailTemplates", 
+            "/api/updateTemplate"
+        ]
+    }, 
+    "status" : NumberInt(1), 
+    "createdAt" : ISODate("2019-01-10T09:14:31.215+0000"), 
+    "updatedAt" : ISODate("2019-01-10T09:14:31.215+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5c370d039144424c7c5aaef1"), 
+    "key" : "message", 
+    "value" : "Messages", 
+    "routes" : {
+        "view" : [
+
+        ], 
+        "api" : [
+
+        ]
+    }, 
+    "status" : NumberInt(2), 
+    "createdAt" : ISODate("2019-01-10T09:14:31.215+0000"), 
+    "updatedAt" : ISODate("2019-01-10T09:14:31.215+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5c370d039144424c7c5aaef2"), 
+    "key" : "settings", 
+    "value" : "Configuration", 
+    "routes" : {
+        "view" : [
+
+        ], 
+        "api" : [
+            "/api/getSettings", 
+            "/api/updateSettings"
+        ]
+    }, 
+    "status" : NumberInt(1), 
+    "createdAt" : ISODate("2019-01-10T09:14:31.215+0000"), 
+    "updatedAt" : ISODate("2019-01-10T09:14:31.215+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5c384ae6ce2300100387f7bd"), 
+    "key" : "subadmin", 
+    "value" : "Sub Admin Management", 
+    "routes" : {
+        "view" : [
+
+        ], 
+        "api" : [
+            "/api/getAdminUser", 
+            "/api/getSubAdmins", 
+            "/api/addSubAdmin", 
+            "/api/updateSubAdmin", 
+            "/api/updateSubAdminStatus", 
+            "/api/getPermissions"
+        ]
+    }, 
+    "status" : NumberInt(1), 
+    "createdAt" : ISODate("2019-01-10T09:14:31.215+0000"), 
+    "updatedAt" : ISODate("2019-01-10T09:14:31.215+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5c653cf1703473190845dd71"), 
+    "key" : "subcruddemo", 
+    "value" : "Sub crud Management", 
+    "routes" : {
+        "view" : [
+
+        ], 
+        "api" : [
+            "/api/getAdminUser", 
+            "/api/getSubAdmins", 
+            "/api/addSubAdmin", 
+            "/api/updateSubAdmin", 
+            "/api/updateSubAdminStatus", 
+            "/api/getPermissions"
+        ]
+    }, 
+    "status" : NumberInt(1), 
+    "createdAt" : ISODate("2019-01-10T09:14:31.215+0000"), 
+    "updatedAt" : ISODate("2019-01-10T09:14:31.215+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5c66591d7034731f1d10a8bd"), 
+    "key" : "email_message", 
+    "value" : "Email Management", 
+    "routes" : {
+        "view" : [
+
+        ], 
+        "api" : [
+            "/api/getEmailMessage", 
+            "/api/getEmailMessage_send", 
+            "/api/getEmailMessage_trash", 
+            "/api/sending_message_touser", 
+            "/api/get_count_inbox_unread_message", 
+            "/api/get_message_inbox_view", 
+            "/api/message_delete_record", 
+            "/api/multiple_message_delete_record", 
+            "/api/send_reply_message", 
+            "/api/download_email_files"
+        ]
+    }, 
+    "status" : NumberInt(1), 
+    "createdAt" : ISODate("2019-01-10T09:14:31.215+0000"), 
+    "updatedAt" : ISODate("2019-01-10T09:14:31.215+0000"), 
+    "__v" : NumberInt(0)
+}

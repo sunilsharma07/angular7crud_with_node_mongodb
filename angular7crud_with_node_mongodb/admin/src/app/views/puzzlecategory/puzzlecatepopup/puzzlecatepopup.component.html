@@ -1,0 +1,52 @@
+
+<div class="modal-header">
+<h4 class="modal-title pull-left">Add Puzzle Category </h4>
+<button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()"><span aria-hidden="true">&times;</span></button>
+</div>
+
+
+<div class="modal-body">
+  <!--<form class="form-horizontal"  [formGroup]="subSendForm" (ngSubmit)="onSubmit()" novalidate enctype="multipart/form-data">-->
+
+    <form [formGroup]="subSendForm" class="form-horizontal" role="form" name="subSendForm" novalidate="" (ngSubmit)="onSubmit()">
+
+        <div class="form-group row">
+            <label class="col-md-2 col-form-label">Category Name:</label>
+            <div class="col-md-10">
+                <input name="cate_name" id = "cate_name" type="text" class="form-control" formControlName="cate_name" placeholder="Enter Category Name">                
+                <span class="text-danger" *ngIf="subSendForm.controls['cate_name'].hasError('required') && isSubmitted">Category Name is Required
+                </span>
+            </div>
+        </div>
+
+
+        <div class="form-group row">
+          <label class="col-md-2 col-form-label">Status</label>
+          <div class="col-md-2">
+
+              <div class="radio">
+                  <label><input type="radio" id="cate_status" formControlName="cate_status" name="cate_status" [value]="1" >Active</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" id="cate_status" formControlName="cate_status" name="cate_status" [value]="0">Inactive</label>
+                </div>
+          </div>
+      </div>
+
+      
+
+     
+        <div class="form-group row">
+          <div class="col-md-2"></div>
+          <div class="col-md-4">
+              <button class="btn btn-sm btn-primary mr-1" type="Submit" [disabled]="btnDisabled">Add</button>
+              <button class="btn" type="button" (click) = "onCancel()">Cancel</button>
+          </div>
+      </div>
+       
+  </form>
+</div>
+
+<div class="modal-footer">
+</div>
+

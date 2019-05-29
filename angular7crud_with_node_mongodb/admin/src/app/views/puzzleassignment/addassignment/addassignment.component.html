@@ -1,0 +1,151 @@
+
+<div class="modal-header">
+<h4 class="modal-title pull-left">Add Puzzle/Assignment</h4>
+<button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()"><span aria-hidden="true">&times;</span></button>
+</div>
+
+
+<div class="modal-body">
+  <!--<form class="form-horizontal"  [formGroup]="subSendForm" (ngSubmit)="onSubmit()" novalidate enctype="multipart/form-data">-->
+
+    <!--<form [formGroup]="subSendForm" class="form-horizontal" role="form" name="subSendForm" novalidate="" (ngSubmit)="onSubmit()">-->
+
+    <form [formGroup]="documentGrp" class="form-horizontal" role="form" name="documentGrp" (ngSubmit)="OnSubmit(documentGrp.value)" #uploadDocumentsForm="ngForm" ngNativeValidate enctype="multipart/form-data">
+
+
+        <div class="form-group row">
+            <label class="col-md-2 col-form-label">Select Puzzle Category</label>
+              <div class="col-md-4">
+                <select class="form-control" id="puzzle_category" name="puzzle_category" formControlName="puzzle_category" (change)="onChange_puzzle_cate($event.target.value)">                    
+                    <option value="undefined" selected>Select Puzzle Category</option>  
+                    <option *ngFor="let template of puzzle_category_list;let i = index" value="{{template._id}}">{{template.name}}</option>
+                </select>
+                <span class="text-danger" *ngIf="chk_puzzle_cate_valid=='0'">Please selecte puzzle category
+                </span>                   
+              </div> 
+          </div>
+        
+        
+        
+        <!--<div class="form-group row">
+            <label class="col-md-2 col-form-label">Puzzle Name:</label>
+            <div class="col-md-5">
+                <input name="puzzle_name" id = "puzzle_name" type="text" class="form-control" formControlName="puzzle_name" placeholder="Puzzle Name">                                
+            </div>
+            <input type="file" id="myFile" name="filename2">
+        </div>-->
+
+
+           <!-- <div class="form-group row">
+                <label class="col-md-2 col-form-label">Status</label>
+                    <div class="col-md-2">
+
+                            <div class="radio">
+                                <label><input type="radio" id="cate_status" formControlName="cate_status" name="cate_status" value='1' checked>Active</label>
+                                </div>
+                                <div class="radio">
+                                <label><input type="radio" id="cate_status" formControlName="cate_status" name="cate_status" value='0'>Inactive</label>
+                                </div>
+                    </div>
+            </div>-->
+
+            <div id="main-form-content">
+
+                    <!--<form [formGroup]="documentGrp" (ngSubmit)="OnSubmit(documentGrp.value)" #uploadDocumentsForm="ngForm" ngNativeValidate>-->
+              
+                      <div class="box box-solid box-primary">
+
+                        <div class="box-body" formArrayName="items">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <div *ngFor="let item of items.controls; let i = index;">
+                                <div [formGroupName]="i">
+                                  <table id="tbl-upload" class="table table-bordered">
+                                    <tbody>
+                                      <tr *ngIf="i==0" class="active">
+                                        <th>Puzzle Name</th>
+                                        <th>PGN File</th>
+                                        <th>&nbsp;</th>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                            <div class="form-group required">
+                                                <input type="text" class="form-control" name="doc_name" formControlName="doc_name" placeholder="Enter Puzzle Name"
+                                                required="">
+                                                <div class="help-block"></div>
+                                            </div>
+                                        </td>
+              
+                                        <!--<td>
+                                          <div class="form-group ">
+              
+                                            <input type="text" class="form-control" name="doc_description" formControlName="doc_description" maxlength="100" placeholder="Enter document related descriptions"
+                                              required="">
+              
+                                            <div class="help-block"></div>
+                                          </div>
+                                        </td>-->
+
+                                        <td>
+                                            <div class="form-group  required">                
+                                                <input type="file" title="Browse Document" (change)="fileSelectionEvent($event,i)" required="">
+                                                <div class="help-block"></div>
+                                            </div>
+                                        </td>
+
+                                        <td class="remove" *ngIf=" i!=0 ">
+                                          <a title="Remove" (click)="removeItem(i)" class="fa fa-minus-square fa-lg text-red"></a>
+                                        </td>
+
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                              <div class="pull-left">
+                                <button type="submit" class="btn btn-sm btn-success" title="Add More" style="" (click)="addItem()">Add More</button>
+                                  <span *ngIf="chk_file_validation==1" class="text-danger">Please upload Only PGN File</span>                                                                      
+                              </div>
+                            </div>
+                            <!--./col-->
+                          </div>
+                          <!--./row-->
+                        </div>
+                        <!--./box-body-->
+                        
+
+                      </div>
+                    <!--</form>-->
+
+                  </div>
+ 
+
+                  <div class="form-group row">
+                      <label class="col-md-2 col-form-label">Status</label>
+                      <div class="col-md-2">            
+                          <div class="radio">
+                              <label><input type="radio" id="cate_status" formControlName="cate_status" name="cate_status" [value]="1" checked=”checked”>Active</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" id="cate_status" formControlName="cate_status" name="cate_status" [value]="0">Inactive</label>
+                            </div>
+                      </div>
+                  </div>    
+                  
+
+
+
+        <div class="form-group row">
+          <div class="col-md-2"></div>
+          <div class="col-md-4">
+              <button class="btn btn-sm btn-primary mr-1" type="Submit" [disabled]="btnDisabled">Add</button>
+              <button class="btn" type="button" (click) = "onCancel()">Cancel</button>
+          </div>
+      </div>
+       
+  </form>
+</div>
+
+<div class="modal-footer">
+</div>
+

@@ -1,0 +1,187 @@
+{ 
+    "_id" : ObjectId("5cdeae28a8f98255f810685c"), 
+    "name" : "m3", 
+    "category_id" : ObjectId("5cdeadfda8f98255f8106859"), 
+    "created_at" : ISODate("2019-05-19T12:50:48.061+0000"), 
+    "updated_at" : ISODate("2019-05-17T12:50:48.061+0000"), 
+    "status" : NumberInt(1), 
+    "downloadFile_pgn" : "pgn3.pgn", 
+    "pgnFile" : "1558097448055_Wf8EHkbbd7phGNsDEOyFtqU73.pgn", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5cdeae28a8f98255f810685d"), 
+    "name" : "m2", 
+    "category_id" : ObjectId("5cdeadfda8f98255f8106859"), 
+    "created_at" : ISODate("2019-05-17T12:50:48.064+0000"), 
+    "updated_at" : ISODate("2019-05-17T12:50:48.064+0000"), 
+    "status" : NumberInt(1), 
+    "downloadFile_pgn" : "pgn2.pgn", 
+    "pgnFile" : "1558097448056_BhJrdabeL4dGPILbChrw15mjJ.pgn", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5cdeae28a8f98255f810685e"), 
+    "name" : "m1", 
+    "category_id" : ObjectId("5cdeadfda8f98255f8106859"), 
+    "created_at" : ISODate("2019-05-17T12:50:48.067+0000"), 
+    "updated_at" : ISODate("2019-05-17T12:50:48.067+0000"), 
+    "status" : NumberInt(1), 
+    "downloadFile_pgn" : "pgn1.pgn", 
+    "pgnFile" : "1558097448056_IInLlSoQXvxmrmP52p5JXshgK.pgn", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5cdeae3ba8f98255f810685f"), 
+    "name" : "jk1", 
+    "category_id" : ObjectId("5cdeae03a8f98255f810685a"), 
+    "created_at" : ISODate("2019-05-17T12:51:07.762+0000"), 
+    "updated_at" : ISODate("2019-05-17T12:51:07.762+0000"), 
+    "status" : NumberInt(1), 
+    "downloadFile_pgn" : "bank card image Thai.jpg", 
+    "pgnFile" : "1558097467757_fVJrATE5S4Z02Las8S0MinVdk.jpg", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5cdeae3ba8f98255f8106860"), 
+    "name" : "jk2", 
+    "category_id" : ObjectId("5cdeae03a8f98255f810685a"), 
+    "created_at" : ISODate("2019-05-17T12:51:07.788+0000"), 
+    "updated_at" : ISODate("2019-05-17T12:51:07.788+0000"), 
+    "status" : NumberInt(1), 
+    "downloadFile_pgn" : "Oceanblue Flower.jpg", 
+    "pgnFile" : "1558097467757_PSpM9DSM0Rv22X5ruYWLeylLQ.jpg", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5ce23c6b21492f1a88e7dff2"), 
+    "name" : "kp1", 
+    "category_id" : ObjectId("5cdeae0aa8f98255f810685b"), 
+    "created_at" : ISODate("2019-05-20T05:34:35.478+0000"), 
+    "updated_at" : ISODate("2019-05-20T05:34:35.478+0000"), 
+    "status" : NumberInt(1), 
+    "downloadFile_pgn" : "Screenshot from 2019-02-21 17-41-38.png", 
+    "pgnFile" : "1558330475464_QO3gwGIOBO4iZWMIcbXKZTBAZ.png", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5ce23c6b21492f1a88e7dff3"), 
+    "name" : "kp2", 
+    "category_id" : ObjectId("5cdeae0aa8f98255f810685b"), 
+    "created_at" : ISODate("2019-05-20T05:34:35.495+0000"), 
+    "updated_at" : ISODate("2019-05-20T05:34:35.495+0000"), 
+    "status" : NumberInt(1), 
+    "downloadFile_pgn" : "Screenshot from 2019-02-12 15-19-54.png", 
+    "pgnFile" : "1558330475464_Ev8X0Qw3t4THUKACG0vrO4qkQ.png", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5ce23c6b21492f1a88e7dff4"), 
+    "name" : "kp3", 
+    "category_id" : ObjectId("5cdeae0aa8f98255f810685b"), 
+    "created_at" : ISODate("2019-05-20T05:34:35.503+0000"), 
+    "updated_at" : ISODate("2019-05-20T05:34:35.502+0000"), 
+    "status" : NumberInt(1), 
+    "downloadFile_pgn" : "Screenshot from 2019-02-07 10-33-09.png", 
+    "pgnFile" : "1558330475463_zH4RoO9E1FCeHmosfpuo8t5PG.png", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5ce39b91cb10e71b1d68a2dd"), 
+    "name" : "mk", 
+    "category_id" : ObjectId("5cdeadfda8f98255f8106859"), 
+    "created_at" : ISODate("2019-05-21T06:32:49.703+0000"), 
+    "updated_at" : ISODate("2019-05-21T06:32:49.703+0000"), 
+    "status" : NumberInt(1), 
+    "downloadFile_pgn" : "pgn3.pgn", 
+    "pgnFile" : "1558420369699_ndGQinsMcHPML5qgUf5QD00pk.pgn", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5ce3ace4cb10e71b1d68a2e5"), 
+    "name" : "m3", 
+    "category_id" : ObjectId("5cdeadfda8f98255f8106859"), 
+    "created_at" : ISODate("2019-05-21T07:46:44.947+0000"), 
+    "updated_at" : ISODate("2019-05-21T07:46:44.946+0000"), 
+    "status" : NumberInt(1), 
+    "downloadFile_pgn" : "pgn3.pgn", 
+    "pgnFile" : "1558424804923_05DQtvqXTSqSwW0tiogIQEUPg.pgn", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5ce3ace4cb10e71b1d68a2e6"), 
+    "name" : "m2", 
+    "category_id" : ObjectId("5cdeadfda8f98255f8106859"), 
+    "created_at" : ISODate("2019-05-21T07:46:44.955+0000"), 
+    "updated_at" : ISODate("2019-05-21T07:46:44.955+0000"), 
+    "status" : NumberInt(1), 
+    "downloadFile_pgn" : "pgn3.pgn", 
+    "pgnFile" : "1558424804923_AydUbrEMEAa9wAEE0hvUxyh3j.pgn", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5ce40377cb10e71b1d68a301"), 
+    "name" : "op2", 
+    "category_id" : ObjectId("5cdeae0aa8f98255f810685b"), 
+    "created_at" : ISODate("2019-05-21T13:56:07.528+0000"), 
+    "updated_at" : ISODate("2019-05-21T13:56:07.528+0000"), 
+    "status" : NumberInt(1), 
+    "downloadFile_pgn" : "pgn3.pgn", 
+    "pgnFile" : "1558446967505_fjr8mZ0Hz92TJKtoIPOU9vbUG.pgn", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5ce40377cb10e71b1d68a300"), 
+    "name" : "op3", 
+    "category_id" : ObjectId("5cdeae0aa8f98255f810685b"), 
+    "created_at" : ISODate("2019-05-21T13:56:07.527+0000"), 
+    "updated_at" : ISODate("2019-05-21T13:56:07.527+0000"), 
+    "status" : NumberInt(1), 
+    "downloadFile_pgn" : "pgn3.pgn", 
+    "pgnFile" : "1558446967505_7TzHMtF6A6xuyLHgueZgzDIOS.pgn", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5ce40377cb10e71b1d68a302"), 
+    "name" : "op1", 
+    "category_id" : ObjectId("5cdeae0aa8f98255f810685b"), 
+    "created_at" : ISODate("2019-05-21T13:56:07.529+0000"), 
+    "updated_at" : ISODate("2019-05-21T13:56:07.529+0000"), 
+    "status" : NumberInt(1), 
+    "downloadFile_pgn" : "pgn1.pgn", 
+    "pgnFile" : "1558446967505_bAXJ1JDZXJpHzvK9miJ26KaiS.pgn", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5ce4e5732de4561a397279db"), 
+    "name" : "dadadads", 
+    "category_id" : ObjectId("5cdeadfda8f98255f8106859"), 
+    "created_at" : ISODate("2019-05-22T06:00:19.543+0000"), 
+    "updated_at" : ISODate("2019-05-22T06:00:19.543+0000"), 
+    "status" : NumberInt(1), 
+    "downloadFile_pgn" : "pgn1.pgn", 
+    "pgnFile" : "1558504819520_ozABT4i2AQHPNhLDG9lm4gchi.pgn", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5ce4e99147b6871d834fde8c"), 
+    "name" : "aa", 
+    "category_id" : ObjectId("5cdeae03a8f98255f810685a"), 
+    "created_at" : ISODate("2019-05-22T06:17:53.856+0000"), 
+    "updated_at" : ISODate("2019-05-22T06:17:53.855+0000"), 
+    "status" : NumberInt(1), 
+    "downloadFile_pgn" : "pgn2.pgn", 
+    "pgnFile" : "1558508174070_Zv78B3vSZ3UKQ68YZ44RquCI6.pgn", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5cebdd99bb73ba2d1325e2af"), 
+    "name" : "puzzle category 1", 
+    "category_id" : ObjectId("5cebdd67bb73ba2d1325e2ae"), 
+    "created_at" : ISODate("2019-05-27T12:52:41.041+0000"), 
+    "updated_at" : ISODate("2019-05-27T12:52:41.041+0000"), 
+    "status" : NumberInt(1), 
+    "downloadFile_pgn" : "pgn2.pgn", 
+    "pgnFile" : "1558961561009_6rHmqwNm6M83ZCCCSld4KgrIr.pgn", 
+    "__v" : NumberInt(0)
+}
