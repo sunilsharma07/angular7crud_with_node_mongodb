@@ -43,7 +43,7 @@
     "@sweetalert2/ngx-sweetalert2": "^5.0.3",
     "angular-datatables": "^7.0.0",
     "bootstrap": "^4.3.1",
-    "chart.js": "^2.7.3",
+    "chart.js": "^2.9.4",
     "core-js": "^2.6.5",
     "datatables.net": "^1.10.19",
     "datatables.net-dt": "^1.10.19",
