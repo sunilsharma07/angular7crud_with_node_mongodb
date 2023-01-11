@@ -12,7 +12,7 @@
     "cors": "^2.8.5",
     "cron": "^1.2.1",
     "crypto": "0.0.3",
-    "debug": "~2.2.0",
+    "debug": "~3.1.0",
     "ejs": "^2.4.2",
     "express": "~4.13.1",
     "express-validator": "^2.20.5",
